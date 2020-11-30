@@ -1,0 +1,48 @@
+#ffff95 cor de fundo header
+amarelo claro #f7ae2b
+marrom #be6723
+azul #32237e
+vermelho #943335
+
+fonte Verdana;
+
+imagem do corpo do site e ajustar foto
+https://images-americanas.b2w.io/produtos/01/00/img/1624577/8/1624577895_1GG.jpg.
+
+usar a logo no cabeçalho
+
+formato do site vai sem dividido em Cards,
+
+Header:
+cor de fundo #ffff95,
+logo na esquerda
+Home, Sobre e Contato
+cor do texto, mouse em cima vermelho
+
+
+Padrão dos Cards iguais
+
+Home:
+ter dois Cards (Cat e Dog, com fonte maior,
+ embaixo a tradução numa fonte menor)
+Card conter uma foto do animal, e ter algumas Caracteristicas. 
+Os Cards ocuparem o restante da tela,
+ ter uma margem para todos os lados,
+um espaço entre eles pra não ficar grudado.
+
+Cão
+2 Cards
+
+Gato
+2 Cards
+
+Sobre
+6 Cards
+
+Contato 
+2 CArds
+
+
+
+
+
