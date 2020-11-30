@@ -8,6 +8,7 @@ import CardActions from '@material-ui/core/CardActions';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Button from '@material-ui/core/Button';
+import cat from "../../assets/img/maxresdefault.jpg"
 import Footer from "../../components/Footer/Footer"
 import "./Home.css"
 
@@ -19,12 +20,14 @@ const Home = () => {
             <div className="home">
                 <Grid container spacing={3}>
                     <Grid item xs={6}>
-                        <Paper className="cg-card">
-                            <Card>
+                            <Card className="cg-card">
                                 <CardActionArea>
-                                    <CardMedia component="img" alt="Foto de Gatos" title="Foto de Gatos" image="../assets/img/maxresdefault.jpg" height="500"/>
+                                    <CardMedia component="img" alt="Foto de Gatos" title="Foto de Gatos" image={cat} />
                                     <CardContent>
-                                        <h1>Cat</h1>
+                                        <h1>Cats</h1>
+                                        <h2>Gatos</h2>
+                                        <p>O gato, também conhecido como gato caseiro, gato urbano ou gato doméstico, é um mamífero carnívoro da família dos felídeos, muito popular como animal de estimação.
+                                             Ocupando o topo da cadeia alimentar, é predador natural de diversos animais, como roedores, pássaros, lagartixas e alguns insetos.</p>
                                     </CardContent>
                                 </CardActionArea>
                                 <CardActions>
@@ -33,8 +36,6 @@ const Home = () => {
                                     </Button>
                                 </CardActions>
                             </Card>
-                            
-                        </Paper>
                     </Grid>
                     <Grid item xs={6}>
                         <Paper className="cg-card">
