@@ -1,3 +1,18 @@
 .dog {
     margin: 100px 0;
+    text-align: center;
+    font-family: Verdana;
 }
+
+.dog-txt-card {
+    height: 80vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+
+.dog-api-card {
+    height: 80vh;
+    margin-right: 5vw;
+    margin-top: 5vh;
+}
+

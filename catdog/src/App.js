@@ -20,10 +20,6 @@ function App() {
             <Contato />
           </Route>
 
-          <Route path="/">
-            <Home />
-          </Route>
-
           <Route path="/cat">
             <Cat />
           </Route>
@@ -32,6 +28,10 @@ function App() {
             <Dog />
           </Route>
 
+          <Route path="/">
+            <Home />
+          </Route>
+          
         </Switch>
       </Router>
 
