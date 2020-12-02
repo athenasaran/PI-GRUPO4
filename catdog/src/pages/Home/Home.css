@@ -2,6 +2,9 @@
     margin: 100px 0;
     text-align: center;
     font-family: Verdana;
+    background-image: url("../../assets/img/Fundo\ CatDog.jpg");
+    background-attachment: fixed;
+    
 }
 
 .c-card {
