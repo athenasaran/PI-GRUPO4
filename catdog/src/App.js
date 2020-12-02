@@ -9,7 +9,6 @@ import Dog from './pages/Dog/Dog';
 function App() {
   return (
     <div className="App">
-
       <Router>
         <Switch>
 
