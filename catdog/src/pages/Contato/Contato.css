@@ -1,3 +1,18 @@
 .contato {
-    margin: 100px 0;
+    margin: 14vh 0 33vh 0;
+}
+
+
+#titulo {
+    margin-left: 30%;
+    margin-bottom: 35px;
+}
+
+#titulo h1{
+    margin-bottom: 0px;
+}
+
+#form-de-contato{
+    margin-right: 30%;
+    margin-left: 30%;
 }
