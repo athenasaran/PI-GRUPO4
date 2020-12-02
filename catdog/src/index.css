@@ -17,6 +17,8 @@ html,
 body {
   margin: 0;
   padding: 0;
+  background-color: whitesmoke;
+  margin-top: 0.5%;
 }
 
 a {

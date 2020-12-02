@@ -5,8 +5,9 @@
     padding-right: 16px;
     padding-top: 32px;
     padding-bottom: 32px;
-    color: var(--azul);
+    color: black;
     text-align: center;
+    width: 100%;
 
     @media (max-width: 800px) {
         margin-bottom: 50px;

@@ -12,36 +12,36 @@ const Cat = () => {
         <>
 
             <Header />
-            <div className="Cat">
+            <div className="cat">
                 <Grid container spacing={3}>
-                        <Grid item xs={6}>
-                                <Card className="cat-txt-card">
-                                    <CardActionArea>
-                                    
-                                        <CardContent>
-                                            <h1>Cats</h1>
-                                            <h1>Text</h1>
-                                            
-                                        </CardContent>
-                                    </CardActionArea>
-                                    
-                                </Card>
-                        </Grid>
-                        <Grid item xs={6}>
+                    <Grid item xs={6}>
+                        <Card className="cat-txt-card">
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <h1>Cats</h1>
+                                    <h1>Text</h1>
+
+                                </CardContent>
+                            </CardActionArea>
+
+                        </Card>
+                    </Grid>
+                    <Grid item xs={6}>
                         <Card className="cat-api-card">
-                                    <CardActionArea>
-                                        
-                                        <CardContent>
-                                            <h1>Api</h1>
-                                            
-                                        </CardContent>
-                                    </CardActionArea>
-                                    
-                                </Card>
-                        </Grid>
-                    
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <h1>Api</h1>
+
+                                </CardContent>
+                            </CardActionArea>
+
+                        </Card>
+                    </Grid>
+
                 </Grid>
-            
+
 
 
             </div>

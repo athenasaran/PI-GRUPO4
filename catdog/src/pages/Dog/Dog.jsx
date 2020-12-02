@@ -12,35 +12,35 @@ const Dog = () => {
         <>
 
             <Header />
-            <div className="Dog">
+            <div className="dog">
 
                 <Grid container spacing={3}>
-                            <Grid item xs={6}>
-                                    <Card className="dog-txt-card">
-                                        <CardActionArea>
-                                        
-                                            <CardContent>
-                                                <h1>Dogs</h1>
-                                                <h1>Text</h1>
-                                                
-                                            </CardContent>
-                                        </CardActionArea>
-                                        
-                                    </Card>
-                            </Grid>
-                            <Grid item xs={6}>
-                            <Card className="dog-api-card">
-                                        <CardActionArea>
-                                            
-                                            <CardContent>
-                                                <h1>Api</h1>
-                                                
-                                            </CardContent>
-                                        </CardActionArea>
-                                        
-                                    </Card>
-                            </Grid>
-                        
+                    <Grid item xs={6}>
+                        <Card className="dog-txt-card">
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <h1>Dogs</h1>
+                                    <h1>Text</h1>
+
+                                </CardContent>
+                            </CardActionArea>
+
+                        </Card>
+                    </Grid>
+                    <Grid item xs={6}>
+                        <Card className="dog-api-card">
+                            <CardActionArea>
+
+                                <CardContent>
+                                    <h1>Api</h1>
+
+                                </CardContent>
+                            </CardActionArea>
+
+                        </Card>
+                    </Grid>
+
                 </Grid>
 
 

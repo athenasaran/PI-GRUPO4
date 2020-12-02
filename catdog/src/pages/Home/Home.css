@@ -1,24 +1,29 @@
 .home {
-    margin: 100px 0;
+    margin: 2% 2%;
     text-align: center;
-    font-family: Verdana;
-    background-image: url("../../assets/img/Fundo\ CatDog.jpg");
-    background-attachment: fixed;
-    
 }
 
 .c-card {
-    height: 68vh;
-    margin-left: 5vw;
-    margin-top: 5vh;
+    height: 96%;
+    margin-top: 3%;
+    width: 95%;
 }
 
 .d-card {
-    height: 68vh;
-    margin-right: 5vw;
-    margin-top: 5vh;
+    height: 96%;
+    margin-top: 3%;
+    width: 95%;
 }
 
 .cd-botao {
     padding: auto;
+
+}
+
+.link {
+    text-decoration: none;
+}
+
+.link:hover {
+    color: var(--amarelo);
 }
