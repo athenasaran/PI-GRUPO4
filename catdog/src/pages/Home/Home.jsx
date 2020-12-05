@@ -25,8 +25,14 @@ import 'react-awesome-slider/dist/custom-animations/cube-animation.css';
 const AutoplaySlider = withAutoplay(AwesomeSlider);
 
 const Home = () => {
+    
+    function tHome() {
+        document.title = "Cat & Dog - Home"
+    };
+    
+    
     return (
-        <>
+        <div onLoad={tHome}>
             <Header />
             <AutoplaySlider
                 play={true}
@@ -83,7 +89,7 @@ const Home = () => {
             </div>
 
             <Footer />
-        </>
+        </div>
     );
 };
 

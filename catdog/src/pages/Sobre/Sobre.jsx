@@ -10,8 +10,13 @@ import Footer from '../../components/Footer/Footer';
 import "./Sobre.css";
 
 const Sobre = () => {
+    
+    function tSobre() {
+        document.title = "Cat & Dog - Sobre"
+    };
+
     return (
-        <>
+        <div onLoad={tSobre}>
 
             <Header />
             <div className="sobre">
@@ -104,7 +109,7 @@ const Sobre = () => {
             </div>
 
             <Footer />
-        </>
+        </div>
     );
 };
 

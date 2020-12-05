@@ -8,8 +8,14 @@ import Footer from '../../components/Footer/Footer';
 import "./Cat.css";
 
 const Cat = () => {
+    
+    function tCat() {
+        document.title = "Cat & Dog - Cat"
+    };
+    
+    
     return (
-        <>
+        <div onLoad={tCat}>
 
             <Header />
             <div className="cat">
@@ -47,7 +53,7 @@ const Cat = () => {
             </div>
 
             <Footer />
-        </>
+        </div>
     );
 };
 

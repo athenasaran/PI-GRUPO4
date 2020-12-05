@@ -10,8 +10,14 @@ import "./Contato.css"
 import TextField from '@material-ui/core/TextField';
 
 const Contato = () => {
+    
+    function tContato() {
+        document.title = "Cat & Dog - Contato"
+    };
+    
+    
     return (
-        <>
+        <div onLoad={tContato}>
 
             <Header />
 
@@ -60,7 +66,7 @@ const Contato = () => {
                 </div>
             </div>
             <Footer />
-        </>
+        </div>
     );
 };
 
