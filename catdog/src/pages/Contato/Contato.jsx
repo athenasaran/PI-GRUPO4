@@ -8,6 +8,7 @@ import "./Contato.css"
 // import Input from '@material-ui/core/Input';
 // import FormHelperText from '@material-ui/core/FormHelperText';
 import TextField from '@material-ui/core/TextField';
+import Button from '@material-ui/core/Button'
 
 const Contato = () => {
     
@@ -63,6 +64,10 @@ const Contato = () => {
                     {/* nome
                     email
                     sugestão */}
+                    <Button variant="contained" color="primary"
+                    style={{marginLeft: 10}}>
+  Enviar
+</Button>
                 </div>
             </div>
             <Footer />
