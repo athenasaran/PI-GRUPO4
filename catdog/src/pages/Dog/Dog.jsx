@@ -1,10 +1,9 @@
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Header from '../../components/Header/Header';
 import Grid from '@material-ui/core/Grid';
 import Card from '@material-ui/core/Card';
 import CardMedia from '@material-ui/core/CardMedia';
 import CardActionArea from '@material-ui/core/CardActionArea';
-import CardContent from '@material-ui/core/CardContent';
 import Footer from '../../components/Footer/Footer';
 import "./Dog.css";
 import axios from 'axios';
@@ -14,25 +13,26 @@ const Dog = () => {
 
 
     useEffect(() => {
-    async function FetchData() {
-    await axios({
-        method: 'GET',
-        url: 'https://dog.ceo/api/breeds/image/random',
-    }).then((res) => {
-        
-        setData(res.data.message)
-    });
-    }
-         FetchData();
+        async function FetchData() {
+            await axios({
+                method: 'GET',
+                url: 'https://api.thedogapi.com/v1/images/search?limit=100',
+                header: 'x-api-key:fbc42b2d-d5cd-4f55-8fce-4b9d65cdb53f'
+            }).then((res) => {
 
-  }, []);
+                setData(res.data)
+            });
+        }
+        FetchData();
+
+    }, []);
 
 
     function tDog() {
         document.title = "Cat & Dog - Dog"
     };
-    
-    
+
+
     return (
         <div onLoad={tDog}>
 
@@ -40,30 +40,24 @@ const Dog = () => {
             <div className="dog">
 
                 <Grid container spacing={3}>
-                    <Grid item xs={6}>
-                        <Card className="dog-txt-card">
-                            <CardActionArea>
 
-                                <CardContent>
-                                    <h1>Dogs</h1>
-                                    <h1>Text</h1>
-
-                                </CardContent>
-                            </CardActionArea>
-
-                        </Card>
-                    </Grid>
                     <Grid item xs={6}>
                         <Card>
                             <CardActionArea>
-                                <CardMedia component="img" alt="Foto de Cão" title="Foto de Cão" image={data} />
+                                {data !== ""
+                                    ? data.map((data, i) => {
+                                        return <CardMedia component="img" alt="Foto de Cão" title="Foto de Cão" image={data.url} className="card-imagem" key={i} />
+                                    })
+                                    : ""
+
+                                }
                             </CardActionArea>
                         </Card>
                     </Grid>
                 </Grid>
 
 
-            
+
             </div>
             <Footer />
         </div>

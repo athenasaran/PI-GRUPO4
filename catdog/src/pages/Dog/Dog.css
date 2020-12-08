@@ -7,7 +7,7 @@
 .dog-txt-card {
     height: 80vh;
     margin-left: 5vw;
-    margin-top: 5vh;
+
 }
 
 .dog-api-card {
@@ -16,3 +16,6 @@
     margin-top: 5vh;
 }
 
+.card-imagem {
+    height: 80vh;
+}
