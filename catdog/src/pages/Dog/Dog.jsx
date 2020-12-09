@@ -1,9 +1,5 @@
 import React, { useEffect, useState } from "react";
 import Header from '../../components/Header/Header';
-import Grid from '@material-ui/core/Grid';
-import Card from '@material-ui/core/Card';
-import CardMedia from '@material-ui/core/CardMedia';
-import CardActionArea from '@material-ui/core/CardActionArea';
 import Footer from '../../components/Footer/Footer';
 import "./Dog.css";
 import axios from 'axios';
