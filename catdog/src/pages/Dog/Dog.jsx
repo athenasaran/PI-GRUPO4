@@ -7,10 +7,27 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import Footer from '../../components/Footer/Footer';
 import "./Dog.css";
 import axios from 'axios';
+import { makeStyles } from '@material-ui/core/styles';
+import GridList from '@material-ui/core/GridList';
+import GridListTile from '@material-ui/core/GridListTile';
+
+const useStyles = makeStyles((theme) => ({
+    root: {
+      display: 'flex',
+      flexWrap: 'wrap',
+      justifyContent: 'space-around',
+      overflow: 'hidden',
+      backgroundColor: theme.palette.background.paper,
+    },
+    gridList: {
+      width: '80%',
+      height: '94vh',
+    },
+  }));
 
 const Dog = () => {
     const [data, setData] = useState([]);
-
+    const classes = useStyles();
 
     useEffect(() => {
         async function FetchData() {
@@ -37,28 +54,15 @@ const Dog = () => {
         <div onLoad={tDog}>
 
             <Header />
-            <div className="dog">
-
-                <Grid container spacing={3}>
-
-                    <Grid item xs={6}>
-                        <Card>
-                            <CardActionArea>
-                                {data !== ""
-                                    ? data.map((data, i) => {
-                                        return <CardMedia component="img" alt="Foto de Cão" title="Foto de Cão" image={data.url} className="card-imagem" key={i} />
-                                    })
-                                    : ""
-
-                                }
-                            </CardActionArea>
-                        </Card>
-                    </Grid>
-                </Grid>
-
-
-
-            </div>
+            <div className={classes.root}>
+            <GridList cellHeight={'50vw'} spacing={50} className={classes.gridList} cols={2}>
+                {data.map((data, id) => (
+                <GridListTile key={id} cols={1}>
+                    <img src={data.url} alt="Foto de Cão" />
+                </GridListTile>
+                ))}
+            </GridList>
+            </div>      
             <Footer />
         </div>
     );
