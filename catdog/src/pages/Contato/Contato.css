@@ -16,3 +16,13 @@
     margin-right: 30%;
     margin-left: 30%;
 }
+
+#erros {
+    font-size: 0.7em;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 10;
+    text-align: center;
+    
+    
+}
+
