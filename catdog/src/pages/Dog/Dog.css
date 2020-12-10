@@ -1,21 +1,51 @@
-.dog {
-    margin: 100px 0;
-    text-align: center;
-    font-family: Verdana;
+.caixaImagens{
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-around;
+
+    margin: 100px auto 0 auto;
+    background-color:rgba(31, 87, 160, 0.568);
 }
 
-.dog-txt-card {
-    height: 80vh;
-    margin-left: 5vw;
+.like-button{
+    background-color: rgba(136, 136, 136, 0.342);
+    position: relative;
+    bottom: 60px;
+    left: 10px;
+    border-radius: 50px;
 
+    width: 50px;
+    height: 50px;
+
+    z-index: 2;
 }
 
-.dog-api-card {
-    height: 80vh;
-    margin-right: 5vw;
-    margin-top: 5vh;
+.divDog{
+    padding-bottom: 50px;
 }
 
-.card-imagem {
-    height: 80vh;
+.imgDog{
+    /* width: 300px; */
+}
+
+@media(min-width: 599px){
+    .imgDog{
+        /* padding-bottom: 30px; */
+        width: 550px;
+    }
+}
+
+@media(min-width: 1109px){
+    .imgDog{
+        /* padding-bottom: 50px; */
+        width: 1100px;
+    }
+}
+
+@media(min-width: 2199px){
+    .imgDog{
+        /* padding-bottom: 100px; */
+        width: 2000px;
+    }
 }
