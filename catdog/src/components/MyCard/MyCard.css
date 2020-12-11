@@ -1,5 +1,4 @@
-.e-txt-card {
-    min-height: 15vh;
+/* .e-txt-card {
     margin-left: 5vw;
     margin-top: 5vh;
 }
@@ -8,3 +7,16 @@
     margin-right: 5vw;
     margin-top: 5vh;
 }
+
+@media(max-width: 400px) {
+
+    .e-txt-card {
+        margin-left: 5vw;
+        margin-top: 5vh;
+    }
+    
+    .d-txt-card {
+        margin-right: 5vw;
+        margin-top: 5vh;
+    }
+} */
