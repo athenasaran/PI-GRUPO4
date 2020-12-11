@@ -1,11 +1,11 @@
 .contato {
-    margin: 14vh 0 33vh 0;
+    margin-top: 14vh;
+    height: 74.7vh;
 }
 
-
 #titulo {
-    margin-left: 30%;
-    margin-bottom: 35px;
+    margin-left: 30.5%;
+    margin-bottom: 5px;
 }
 
 #titulo h1{
@@ -18,11 +18,42 @@
 }
 
 #erros {
-    font-size: 0.7em;
-    background-color: rgba(255, 0, 0, 0.5);
+    margin-left: 30.5%;
+    margin-right: 29%;
+    font-size: 0.8em;
     z-index: 10;
-    text-align: center;
+}
+
+#erros p{
+    text-align: left;
+    margin: 0px 0px 5px 0px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.footer{
+    position: relative;
+    bottom: 0px;
+}
+
+@media(max-width: 699px){
+    #erros{
+        margin-left: 7.5%;
+        margin-right: 5%;
+    }
+
+        
+    #form-de-contato{
+        margin-right: 10%;
+        margin-left: 5%;
+    }
     
     
+    #titulo {
+        margin-left: 7.5%;
+        margin-bottom: 5px;
+        margin-top: 0px;
+    }
 }
 

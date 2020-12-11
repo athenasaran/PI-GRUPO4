@@ -23,7 +23,7 @@ const Contato = () => {
         let email = document.getElementById('email');
         let texto = document.getElementById('contato-texto');
         
-        if (nome.value.length > 4){
+        if (nome.value.length > 2){
             var rNome = true;
         };
 
@@ -31,7 +31,7 @@ const Contato = () => {
             var rEmail = true;
         };
 
-        if (texto.value.length > 9){
+        if (texto.value.length != " "){
             var rTexto = true;
         };
        
@@ -48,13 +48,13 @@ const Contato = () => {
             document.getElementById('erros').innerHTML= ""
 
             if(! rNome){
-                document.getElementById('erros').innerHTML+= "<ul><li>Campo <strong>Nome</Strong> deve ter no mínimo 5 letras"
+                document.querySelector('#erros').innerHTML+= "<p>Campo <strong>Nome</Strong> deve ter no mínimo 2 letras </p>"
             }
             if(! rEmail){
-                document.getElementById('erros').innerHTML+= "<ul><li>Campo <strong>Email</Strong> inválido"
+                document.querySelector('#erros').innerHTML+= "<p>Campo <strong>Email</Strong> inválido </p>"
             }
             if(! rTexto){
-                document.getElementById('erros').innerHTML+= "<ul><li>Campo <strong>Texto</Strong> deve ter no mínimo 10 letras"
+                document.querySelector('#erros').innerHTML+= "<p>Campo <strong>Texto</Strong> deve ter no mínimo 10 letras </p>"
             }
         };
 
@@ -65,14 +65,14 @@ const Contato = () => {
     return (
         <div onLoad={tContato}>
 
-            <Header />
+            <Header id="header"/>
                 
                         <div className="contato">
                             <div id="titulo">
                                 <h1>Contato</h1>
                                 <p>Use esse formulário para falar conosco!</p>
                             </div>
-                            <div id="erros">
+                            <div  id="erros">
 
                             </div>
                             <div id="form-de-contato">
@@ -95,7 +95,6 @@ const Contato = () => {
                                 style={{ margin: 12}}
                                 placeholder="exemplo@catdog.com"
                                 fullWidth
-                                color="secondary"
                                 margin="normal"
                                 InputLabelProps={{
                                     shrink: true,
@@ -121,7 +120,7 @@ const Contato = () => {
                     </div>
                     
             
-            <Footer />
+            <Footer className="footer"/>
         </div>
     );
 };
