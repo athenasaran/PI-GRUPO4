@@ -1,23 +1,43 @@
 .home {
     margin: 2% 2%;
-    text-align: center;
+    text-align: left;
 }
 
 .c-card {
-    height: 96%;
+    height: 50%;
     margin-top: 3%;
-    width: 95%;
+    width: 48%;
 }
 
 .d-card {
-    height: 96%;
+    height: 50%;
     margin-top: 3%;
-    width: 95%;
+    width: 48%;
+}
+
+@media(max-width:699px){
+    .c-card {
+        height: 98%;
+        margin-top: 11%;
+        width: 98%;
+    }
+    
+    .d-card {
+        height: 98%;
+        margin-top: 11%;
+        width: 98%;
+    }
+        
 }
 
 .cd-botao {
     padding: auto;
 
+}
+
+.cg-botao{
+    position: relative;
+    bottom: 10px;
 }
 
 .link {
@@ -26,4 +46,11 @@
 
 .link:hover {
     color: var(--amarelo);
+}
+
+.caixa{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
