@@ -6,6 +6,9 @@
     .header-logo {
         max-width: 40px;
     }
+    .header{
+        margin-right: 100px;
+    }
 }
 
 
@@ -22,7 +25,6 @@
     position: fixed;
     top: 0;
     left: 0;
-    right: 0;
     padding-left: 3%;
     padding-right: 5%;
     border-bottom: 2px solid var(--amarelo);
@@ -36,7 +38,7 @@
 
 .nav-header li {
     list-style: none;
-    margin: 5%;
+    margin-right: 10%;
 }
 
 .header-link {
