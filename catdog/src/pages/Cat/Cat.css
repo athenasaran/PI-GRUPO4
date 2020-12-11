@@ -25,7 +25,7 @@
     z-index: 2;
 }
 
-@media(max-width: 699px){
+@media(max-width: 598px){
     .like-button{
         bottom:60px;
     }
